@@ -1,23 +1,25 @@
-package loop;
-
+package stringedu;
+import java.util.*;
 public class Palindrome {
 	public static void main(String args[]) {
-		int digit,num = 121,reverse = 0, temp =num;
-		while(num>0)
+		String s, rev="";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter string ");
+		s = sc.nextLine();
+		int length = s.length();
+		for(int i=s.length();i>0;i--)
 		{
-			digit = num%10;
-			reverse = reverse*10+digit;
-			num = num/10;
+			rev=rev+(s.charAt(i-1));
 		}
-		System.out.println("The reverse is"  +reverse);
-		if(temp == reverse)
+		if(s.equals(rev))
 		{
-			System.out.println("palindrome" +reverse);
+			System.out.println("string is palindrome "+rev);
 		}
 		else
 		{
-			System.out.println("not palindrome" +reverse);
+			System.out.println("string is not palindrome "+rev);
 		}
 	}
+	
 
 }
