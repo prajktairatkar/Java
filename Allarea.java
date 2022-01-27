@@ -1,18 +1,36 @@
-package edubridge;
-
+package one;
+import java.util.*;
+class Area{
+	void rectangleArea()
+	{
+		int l,b;
+		Scanner sc= new Scanner(System.in);
+		System .out.println("Enter the value of length and breadth");
+		l = sc.nextInt();
+		b = sc.nextInt();
+		int rectarea = l * b;
+		System.out.println("Area of rectangle is"+rectarea);
+		}
+	float circleArea(float r) {
+		float ans ;
+		ans = 3.14f*r*r;
+		return ans;
+	}
+	int squarearea(int side)
+	{
+		int sqarea = side*side;
+		return sqarea;
+	}
+}
 public class Allarea {
-
-	public static void main(String[] args) {
-		float length = 2, breadth =3,base = 4,height =5,radius = 10,side = 4;
-		float Areacircle, Areasquare,Arearect,Areatriangle;
-		Areacircle = 3.14f*(radius)*(radius);
-		Areasquare = (side)*(side);
-		Arearect = length * breadth;
-		Areatriangle = base*height/2;
-		System.out.println("The area of circle radius " +radius+ " is " +Areacircle);
-		System.out.println("The area of square side " +side+ " is " +Areasquare);
-		System.out.println("The are of rectangle length " +length+ " and breadth " +breadth+ " is " +Arearect );
-		System.out.println("The area of triangle base " +base+ " and " +height+ " is " +Areatriangle);
+	public static void main(String args[]) {
+		Area a = new Area();
+		a.rectangleArea();
+		System.out.println("Area of circle is"+a.circleArea(4));
+	    //System.out.println("Area of square is"+a.squarearea(2));
+		int sa = a.squarearea(2);
+		System.out.println("area of square "+sa);
+		
 	}
 
 }
