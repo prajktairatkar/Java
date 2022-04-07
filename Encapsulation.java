@@ -13,9 +13,9 @@ public void setBalance(int balance) {
 public class Encapsulation {
 	public static void main(String args[]) {
 		enc obj =new enc();
-		//obj.getbalance();
+		obj.setBalance(66);
 		System.out.println("balance is "+ obj.getBalance());
-		//System.out.println("balance is "+ obj.setBalance());
+		//System.out.println("balance is "+ obj.setBalance(4556));
 	}
 
 }
