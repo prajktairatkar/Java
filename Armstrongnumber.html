@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function armstrong(){
+var rev=0,num,digit;
+var temp=0; var temp=rev;
+num = document.getElementById("num").value;
+while(num>0){
+  digit = temp % 10;
+  rev = rev + (digit*digit*digit);
+  num= parseInt(num/10);
+
+}
+//alert(rev);
+if(temp == rev){
+alert("the number is armstrong");
+}
+else{
+alert("the number is armstrong");
+}
+}
+</script>
+</head>
+<body>
+Enter a number: <input id = "num">
+<br><br>
+<button onclick = "armstrong()"> armstrong </button>
+<p id = "result"></p>
+
+
+</body>
+</html>

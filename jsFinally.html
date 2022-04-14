@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Javascript finally statement.</title>
+</head>
+<body>
+ 
+<p id="error_Mesg">Error : </p>
+<p id="mesg"></p>
+ 
+<script type="text/javascript">
+    try
+    {
+         var result  =  Sum(15, 21); // Sum is not defined yet
+    }
+    catch(ex)
+    {
+        document.getElementById("error_Mesg").innerHTML += ex;
+    }
+    finally{
+        document.getElementById("mesg").innerHTML = "finally block executed";
+    }
+ 
+</script>
+ 
+</body>
+</html>

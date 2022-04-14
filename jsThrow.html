@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Javascript throw statement.</title>
+</head>
+<body>
+ 
+<h3 id="error_Mesg"></h3>
+ 
+<script type="text/javascript">
+    try
+    {
+        throw {
+            number : 404,
+            message : "This webpage is not available !"
+        };
+    }
+    catch(ex)
+    {
+        document.getElementById("error_Mesg").innerHTML = ex.number + " - " + ex.message;
+    }
+</script>
+ 
+</body>
+</html>
