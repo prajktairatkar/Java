@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app = "mymodule">
+<head>
+<script src = "angular.min.js"></script>
+</head>
+<body>
+<div ng-controller  = "myController">
+{{message}}
+</div>
+<script>
+var myApp =  angular.module("mymodule",[]);
+myApp.controller("myController", function($scope){
+$scope.message = "welcm to java ";
+});
+</script>
+</body>
+</html>
